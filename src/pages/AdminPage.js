@@ -28,7 +28,7 @@ const AdminPage = ({ username }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8080/add", {
+      const response = await fetch("https://jobportal-backend-hb98.onrender.com/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

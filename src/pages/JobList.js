@@ -26,7 +26,7 @@ const JobList = () => {
   const role = true;
 
   useEffect(() => {
-    axios.get("http://localhost:8080/jobs")
+    axios.get("https://jobportal-backend-hb98.onrender.com/jobs")
       .then(response => {
         setJobs(response.data || []);
         setLoading(false);

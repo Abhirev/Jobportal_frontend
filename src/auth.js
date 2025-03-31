@@ -1,6 +1,6 @@
 export const getUserRole = async () => {
     try {
-      const response = await fetch("http://localhost:8080/auth/role", {
+      const response = await fetch("https://jobportal-backend-hb98.onrender.com/auth/role", {
         method: "GET",
         credentials: "include", // If using sessions or cookies
         headers: {

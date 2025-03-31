@@ -6,7 +6,7 @@ const Jobs = () => {
   const role = localStorage.getItem("role");
 
   useEffect(() => {
-    fetch("http://localhost:8080/jobs") 
+    fetch("https://jobportal-backend-hb98.onrender.com/jobs") 
       .then(response => response.json())
       .then(setJobs)
       .catch(error => console.error("Error fetching jobs:", error));
@@ -15,7 +15,7 @@ const Jobs = () => {
   const handleApply = async (jobId) => {
     const userId = localStorage.getItem("username"); // Username as user ID
 
-    const response = await fetch("http://localhost:8080/jobs/apply", {
+    const response = await fetch("https://jobportal-backend-hb98.onrender.com/jobs/apply", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId, jobId }),

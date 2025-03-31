@@ -5,7 +5,7 @@ const AllJobs = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/jobs")  // Adjust API endpoint as needed
+    fetch("https://jobportal-backend-hb98.onrender.com/jobs")  // Adjust API endpoint as needed
       .then((res) => res.json())
       .then((data) => setJobs(data))
       .catch((err) => console.error("Error fetching jobs:", err));

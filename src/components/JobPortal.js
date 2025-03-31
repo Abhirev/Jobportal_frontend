@@ -9,7 +9,7 @@ const JobPortal = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:8080/jobs")
+    axios.get("https://jobportal-backend-hb98.onrender.com/jobs")
       .then(response => {
         console.log("Fetched Jobs:", response.data); // Debugging
         if (Array.isArray(response.data)) {

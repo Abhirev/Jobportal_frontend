@@ -6,7 +6,7 @@ const Login = () => {
     const [role, setRole] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:8080/userRole", { credentials: "include" })
+        fetch("https://jobportal-backend-hb98.onrender.com/userRole", { credentials: "include" })
             .then(response => response.json())
             .then(data => {
                 setRole(data.role);
@@ -20,7 +20,7 @@ const Login = () => {
     }, [navigate]);
 
     const handleLogin = () => {
-        window.location.href = "http://localhost:8080/login";
+        window.location.href = "https://jobportal-backend-hb98.onrender.com/login";
     };
 
     return (

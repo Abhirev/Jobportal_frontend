@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080';
+const API_URL = 'https://jobportal-backend-hb98.onrender.com';
 
 // Axios instance for default settings
 const api = axios.create({
